@@ -86,14 +86,14 @@
 	<distributionManagement>
 	    <!-- 两个ID必须与 setting.xml中的<server><id>nexus-releases</id></server>保持一致-->
 	    <repository>
-	        <id>hzw</id>
-	        <name></name>
-	        <url>http://192.168.32.131:8081/nexus/content/groups/public</url>
+	        <id>hzw-releases</id>
+	        <name>Nexus Release Repository</name>
+	        <url>http://192.168.32.131:8081/nexus/content/repositories/releases</url>
 	    </repository>
 	    <snapshotRepository>
-	        <id>hzw</id>
-	        <name></name>
-	        <url>http://192.168.32.131:8081/nexus/content/groups/public</url>
+	        <id>hzw-snapshots</id>
+	        <name>Nexus Snapshot Repository</name>
+	        <url>http://192.168.32.131:8081/nexus/content/repositories/snapshots</url>
 	    </snapshotRepository>
 	</distributionManagement>
 </project>
