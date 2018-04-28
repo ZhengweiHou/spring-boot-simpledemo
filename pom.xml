@@ -30,56 +30,5 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<!--新增的docker maven插件-->
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>0.4.12</version>
-                <!--docker镜像相关的配置信息-->
-                <configuration>
-                    <!--镜像名，这里用工程名-->
-                    <imageName>${project.artifactId}</imageName>
-                    <!--Dockerfile文件所在目录-->                 
-                    <dockerDirectory>${project.basedir}</dockerDirectory>
-                    <!--TAG,这里用工程版本号-->
-                    <imageTags>
-                        <imageTag>${project.version}</imageTag>
-                    </imageTags>
-                    <!--构建镜像的配置信息-->
-                    <resources>
-                        <resource>
-                            <targetPath>/</targetPath>
-                            <directory>${project.build.directory}</directory>
-                            <include>${project.build.finalName}.jar</include>
-                        </resource>
-                    </resources>
-                </configuration>
-	      	</plugin>
-		
-		
-		
-		
-		
-			<!-- <plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring.boot.version}</version>
-				<configuration>
-					<mainClass>com.hzw.learn.spring_boot_simpledemo.Application</mainClass>
-					<layout>ZIP</layout>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>
-				                repackage
-							</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin> -->
-		</plugins>
-	</build>
+	
 </project>
