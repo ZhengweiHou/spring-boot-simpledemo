@@ -43,6 +43,8 @@
                     <imageName>${project.artifactId}</imageName>
                     <!--Dockerfile文件所在目录-->                 
                     <dockerDirectory>${project.basedir}</dockerDirectory>
+		    <!-- optionally overwrite tags every time image is built with docker:build -->
+                    <forceTags>true</forceTags>
                     <!--TAG,这里用工程版本号-->
                     <imageTags>
                         <imageTag>${project.version}</imageTag>
