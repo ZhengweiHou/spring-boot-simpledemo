@@ -4,6 +4,7 @@ ENV HOME_PATH /home
 
 # ADD /spring-boot-simpledemo-0.0.2-SNAPSHOT.jar $HOME_PATH/spring-boot-simpledemo.jar
 # ADD /apphome/application.yml /config/application.yml
+ADD ./spring-boot-simpledemo-0.0.3-SNAPSHOT.jar $HOME_PATH/spring-boot-simpledemo.jar
 
 ENV env-test envtest
 
