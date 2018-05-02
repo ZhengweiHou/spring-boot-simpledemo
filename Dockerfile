@@ -5,9 +5,9 @@ ENV HOME_PATH /home
 # ADD /spring-boot-simpledemo-0.0.2-SNAPSHOT.jar $HOME_PATH/spring-boot-simpledemo.jar
 # ADD /apphome/application.yml /config/application.yml
 ADD ./spring-boot-simpledemo-0.0.3-SNAPSHOT.jar $HOME_PATH/spring-boot-simpledemo.jar
-
+ADD ./boot.sh:$HOME_PATH/boot.sh
 ENV env-test envtest
 
 WORKDIR $HOME_PATH
 
-CMD ["/bin/bash"]
+CMD ["sh","boot.sh"]
