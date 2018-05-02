@@ -8,7 +8,7 @@ ADD ./spring-boot-simpledemo-0.0.1-SNAPSHOT.jar $HOME_PATH/spring-boot-simpledem
 ADD ./boot.sh $HOME_PATH/boot.sh
 ADD ./env/common.env /common.env
 
-VOLUME /home/test /home/envs
+# VOLUME /home/test /home/envs
 
 # WORKDIR $HOME_PATH
 
