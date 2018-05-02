@@ -6,4 +6,4 @@ ADD ./spring-boot-simpledemo-0.0.1-SNAPSHOT.jar $HOME_PATH/spring-boot-simpledem
 COPY ./boot.sh $HOME_PATH//boot.sh
 COPY ./env $HOME_PATH/env
 
-CMD ["sh","$HOME_PATH/boot.sh"]
+CMD ["sh","/home/boot.sh"]
