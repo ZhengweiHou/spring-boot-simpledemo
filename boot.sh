@@ -1,4 +1,4 @@
-cmd="source /home/envs/env2"
+cmd="source /home/common.env"
 echo $cmd
 eval "$cmd"
 echo $aa
