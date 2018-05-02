@@ -1,5 +1,4 @@
-APPHOME=/home
-cmd="source /home/common.env"
+cmd="source /common.env"
 echo $cmd
 eval "$cmd"
 echo $aa

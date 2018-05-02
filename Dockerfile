@@ -6,8 +6,8 @@ ENV HOME_PATH /home
 # ADD /apphome/application.yml /config/application.yml
 ADD ./spring-boot-simpledemo-0.0.1-SNAPSHOT.jar $HOME_PATH/spring-boot-simpledemo.jar
 ADD ./boot.sh $HOME_PATH/boot.sh
-ADD ./env $HOME_PATH
+ADD ./env/common.env /common.env
 
-WORKDIR $HOME_PATH
+# WORKDIR $HOME_PATH
 
 CMD ["sh","$HOME_PATH/boot.sh"]
