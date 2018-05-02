@@ -1,10 +1,6 @@
-#!/bin/sh
 APPHOME=/home
-
-for env_file in `ls ${APPHOME}/evnconfig/*.env`
-do
-   source $env_file
-done
-
+cmd="source /home/common.env"
+echo $cmd
+eval "$cmd"
 echo $aa
 echo $bb
