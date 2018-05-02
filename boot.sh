@@ -1,5 +1,3 @@
-cmd="source /home/common.env"
-echo $cmd
-eval "$cmd"
+source /home/test/common.env
 echo $aa
 echo $bb
