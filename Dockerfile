@@ -6,7 +6,7 @@ ENV HOME_PATH /home
 # ADD /apphome/application.yml /config/application.yml
 ADD ./spring-boot-simpledemo-0.0.3-SNAPSHOT.jar $HOME_PATH/spring-boot-simpledemo.jar
 ADD ./boot.sh $HOME_PATH/boot.sh
-ENV env-test envtest
+ADD ./env $HOME_PATH/evnconfig
 
 WORKDIR $HOME_PATH
 
