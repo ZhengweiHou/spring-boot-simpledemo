@@ -1,4 +1,4 @@
-APPHOME=~/home
+APPHOME=/home
 
 # 加载common env
 for env_file in `ls ${APPHOME}/env/*.env`
